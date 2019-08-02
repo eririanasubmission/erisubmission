@@ -68,7 +68,7 @@
     $host = "eririanasubmissionappserver.database.windows.net";
     $user = "eririana";
     $pass = "L@gin210584";
-    $db = "registration";
+    $db = "eririanasubmissiondb";
 
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
@@ -84,7 +84,7 @@
             $job = $_POST['job'];
             $tanggal = date("Y-m-d");
             // Insert data
-            $sql_insert = "INSERT INTO registration (nama, email, job, date) 
+            $sql_insert = "INSERT INTO registration (nama, email, job, tanggal) 
                         VALUES (?,?,?,?)";
             $stmt = $conn->prepare($sql_insert);
             $stmt->bindValue(1, $nama);
@@ -108,12 +108,12 @@
                 echo "<tr><th>Nama</th>";
                 echo "<th>Email</th>";
                 echo "<th>Job</th>";
-                echo "<th>Date</th></tr></thead><tbody>";
+                echo "<th>Tanggal</th></tr></thead><tbody>";
                 foreach($registrants as $registrant) {
                     echo "<tr><td>".$registrant['nama']."</td>";
                     echo "<td>".$registrant['email']."</td>";
                     echo "<td>".$registrant['job']."</td>";
-                    echo "<td>".$registrant['date']."</td></tr>";
+                    echo "<td>".$registrant['tanggal']."</td></tr>";
                 }
                 echo "</tbody></table>";
             } else {
