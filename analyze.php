@@ -8,7 +8,7 @@ use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
 use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
-$connectionString = ";
+$connectionString = "";
 $containerName = "";
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
@@ -33,7 +33,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
     <meta name="author" content="">
     <link rel="icon" href="https://raw.githubusercontent.com/muhrizky/Smart-Parkir/master/parking_meter__2__Mrq_icon.ico">
 
-    <title>Undip Smart Parkir</title>
+    <title>Submission Image & Storage</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/starter-template/">
 
@@ -51,17 +51,17 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 			<ul class="navbar-nav mr-auto">
 			<li class="nav-item">
-				<a class="nav-link" href="https://smart-parkir.azurewebsites.net/">Home</a>
+				<a class="nav-link" href="https://eririanasubmission.azurewebsites.net/">Home</a>
 			</li>
 			<li class="nav-item active">
-				<a class="nav-link" href="https://smart-parkir.azurewebsites.net/analyze.php">Analisis Kendaraan<span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="https://eririanasubmission.azurewebsites.net/analyze.php">Analisis Foto<span class="sr-only">(current)</span></a>
 			</li>
 		</div>
 		</nav>
 		<main role="main" class="container">
     		<div class="starter-template"> <br><br><br>
-        		<h1>Analisis Kendaraan</h1>
-				<p class="lead">Pilih Foto Kendaraan Anda.<br> Kemudian Click <b>Upload</b>, untuk menganlisa foto pilih <b>analyze</b> pada tabel.</p>
+        		<h1>Analisis Foto</h1>
+				<p class="lead">Pilih Foto Anda.<br> Kemudian Click <b>Upload</b>, untuk menganlisa foto pilih <b>analyze</b> pada tabel.</p>
 				<span class="border-top my-3"></span>
 			</div>
 		<div class="mt-4 mb-2">
