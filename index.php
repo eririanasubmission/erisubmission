@@ -65,7 +65,7 @@
         </form>   
    
  <?php
-    $host = "eririanasubmissionappserver.database.windows.net";
+    $host = "eririanasubmissionappserver.database.windows.net,1433";
     $user = "eririana";
     $pass = "L@gin210584";
     $db = "eririanasubmissiondb";
@@ -73,8 +73,8 @@
     try {
         $conn = new PDO("sqlsrv:server = $host; Database = $db", $user, $pass);
         $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
-    } catch(Exception $e) {
-        echo "Failed: " . $e;
+    } catch(PDOException $e) {
+        die("Failed: " . $e->getMessage());
     }
 
     if (isset($_POST['submit'])) {
@@ -92,8 +92,8 @@
             $stmt->bindValue(3, $job);
             $stmt->bindValue(4, $tanggal);
             $stmt->execute();
-        } catch(Exception $e) {
-            echo "Failed: " . $e;
+        } catch(PDOException $e) {
+            die("Failed: " . $e->getMessage());
         }
 
         echo "<h3>Your're registered!</h3>";
@@ -119,8 +119,8 @@
             } else {
                 echo "<h3>No one is currently registered.</h3>";
             }
-        } catch(Exception $e) {
-            echo "Failed: " . $e;
+        } catch(PDOException $e) {
+            die("Failed: " . $e->getMessage());
         }
     }
  ?>
