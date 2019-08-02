@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
 	$content = fopen($_FILES["fileToUpload"]["tmp_name"], "r");
 	// echo fread($content, filesize($fileToUpload));
 	$blobClient->createBlockBlob($containerName, $fileToUpload, $content);
-	header("Location: index.php");
+	header("Location: index.html");
 }
 $listBlobsOptions = new ListBlobsOptions();
 $listBlobsOptions->setPrefix("");
@@ -77,7 +77,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 							<td><?php echo $blob->getName() ?></td>
 							<td><?php echo $blob->getUrl() ?></td>
 							<td>
-								<form action="testVision.php" method="post">
+								<form action="testVision.html" method="post">
 									<input type="hidden" name="url" value="<?php echo $blob->getUrl()?>">
 									<input type="submit" name="submit" value="Analyze!" class="btn btn-primary">
 								</form>
