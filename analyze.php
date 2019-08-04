@@ -61,7 +61,7 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 		<main role="main" class="container">
     		<div class="starter-template"> <br><br><br>
         		<h1>Analisis Foto</h1>
-				<p class="lead">Pilih Foto Anda.<br>Kemudian Click <b>Upload</b>, untuk menganlisa foto pilih <b>analyze</b> pada tabel.</p>
+				<p class="lead">Pilih Foto Anda.<br>Kemudian Click <b>Upload</b>, untuk menganalisa foto pilih <b>analyze</b> pada tabel.</p>
 				<span class="border-top my-3"></span>
 			</div>
 		<div class="mt-4 mb-2">
