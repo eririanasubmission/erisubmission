@@ -58,7 +58,7 @@ if (isset($_POST['submit'])) {
             // *** Update or verify the following values. ***
             // **********************************************
             // Replace <Subscription Key> with your valid subscription key.
-            var subscriptionKey = "dd62xxxxx";
+            var subscriptionKey = "dd62e54e34104f05b07c739874fb5811";
             // You must use the same Azure region in your REST API method as you used to
             // get your subscription keys. For example, if you got your subscription keys
             // from the West US region, replace "westcentralus" in the URL
@@ -84,7 +84,7 @@ if (isset($_POST['submit'])) {
                 // Request headers.
                 beforeSend: function(xhrObj){
                     xhrObj.setRequestHeader("Content-Type","application/json");
-                    xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", subscriptionKey);
+                    xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", dd62e54e34104f05b07c739874fb5811;
                 },
                 type: "POST",
                 // Request body.
