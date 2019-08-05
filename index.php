@@ -45,7 +45,7 @@
         </div>
         <div class="form-group">
             <label for="email">Email: </label>
-            <input type="text" class="form-control" name="nim" id="nim" required=""maxlength="15">
+            <input type="text" class="form-control" name="email" id="email" required=""maxlength="15">
         </div>
         <div class="form-group">
             <label for="job">Job: </label>
