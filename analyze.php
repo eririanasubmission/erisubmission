@@ -8,8 +8,8 @@ use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
 use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
-$connectionString = "";
-$containerName = "";
+$connectionString = "DefaultEndpointsProtocol=https;AccountName=eririanasubmission;AccountKey=K/z7FSjtWAG0MBqxvI8rpV+PvEDVaLNI7XjKXe+TVOdCb+OIwe7CoFTVPGzYAYQvePlOVgLfWePZGgbOvWJQYw==;EndpointSuffix=core.windows.net";
+$containerName = "blockblobs";
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
 if (isset($_POST['submit'])) {
@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
 	$content = fopen($_FILES["fileToUpload"]["tmp_name"], "r");
 	// echo fread($content, filesize($fileToUpload));
 	$blobClient->createBlockBlob($containerName, $fileToUpload, $content);
-	header("Location:analyze.php");
+	header("Location: analyze.php");
 }
 $listBlobsOptions = new ListBlobsOptions();
 $listBlobsOptions->setPrefix("");
