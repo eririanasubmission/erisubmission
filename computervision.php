@@ -3,10 +3,10 @@ if (isset($_POST['submit'])) {
 	if (isset($_POST['url'])) {
 		$url = $_POST['url'];
 	} else {
-		header("Location:analyze.php");
+		header("Location: analyze.php");
 	}
 } else {
-	header("Location:analyze.php");
+	header("Location: analyze.php");
 }
 ?>
 
@@ -68,7 +68,7 @@ if (isset($_POST['submit'])) {
             // If you use a free trial subscription key, you shouldn't need to change
             // this region.
             var uriBase =
-            "https://westcentralus.api.cognitive.microsoft.com/vision/v2.0/analyze";
+            "https://southeastasia.api.cognitive.microsoft.com/vision/v2.0/analyze";
             // Request parameters.
             var params = {
                 "visualFeatures": "Categories,Description,Color",
