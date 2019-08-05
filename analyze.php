@@ -1,5 +1,5 @@
 <?php
-require_once 'vendor/autoload.php';
+require_once "vendor/autoload.php";
 require_once "./random_string.php";
 
 use MicrosoftAzure\Storage\Blob\BlobRestProxy;
@@ -8,7 +8,7 @@ use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
 use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
-$connectionString = "DefaultEndpointsProtocol=https;AccountName=eririanasubmission;AccountKey=K/z7FSjtWAG0MBqxvI8rpV+PvEDVaLNI7XjKXe+TVOdCb+OIwe7CoFTVPGzYAYQvePlOVgLfWePZGgbOvWJQYw==;EndpointSuffix=core.windows.net";
+$connectionString = "K/z7FSjtWAG0MBqxvI8rpV+PvEDVaLNI7XjKXe+TVOdCb+OIwe7CoFTVPGzYAYQvePlOVgLfWePZGgbOvWJQYw==";
 $containerName = "blockblobs";
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
