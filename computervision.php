@@ -84,7 +84,7 @@ if (isset($_POST['submit'])) {
                 // Request headers.
                 beforeSend: function(xhrObj){
                     xhrObj.setRequestHeader("Content-Type","application/json");
-                    xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", dd62e54e34104f05b07c739874fb5811;
+                    xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", subscriptionKey);
                 },
                 type: "POST",
                 // Request body.
