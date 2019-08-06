@@ -27,7 +27,7 @@
 				<a class="nav-link" href="https://eririanasubmission.azurewebsites.net/">Home</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="https://eririanasubmission.azurewebsites.net/analyze.php">Analisis Foto<span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="https://eririanasubmission.azurewebsites.net/analyze.php">Analisa Foto<span class="sr-only">(current)</span></a>
 			</li>
 		</div>
 		</nav>
