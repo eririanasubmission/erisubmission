@@ -51,10 +51,10 @@ $result = $blobClient->listBlobs($containerName, $listBlobsOptions);
 		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 			<ul class="navbar-nav mr-auto">
 			<li class="nav-item">
-				<a class="nav-link" href="https://eririanasubmission.azurewebsites.net/">Home</a>
+				<a class="nav-link" href="http://eririanasubmission.azurewebsites.net/">Home</a>
 			</li>
 			<li class="nav-item active">
-				<a class="nav-link" href="https://eririanasubmission.azurewebsites.net/analyze.php">Analisis Foto<span class="sr-only">(current)</span></a>
+				<a class="nav-link" href="http://eririanasubmission.azurewebsites.net/analyze.php">Analisis Foto<span class="sr-only">(current)</span></a>
 			</li>
 		</div>
 		</nav>
