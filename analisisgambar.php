@@ -14,6 +14,11 @@ if (isset($_POST['submit'])) {
 <head>
     <title>Analyze</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+	
+	<script language="javascript">
+        document.getElementById('analyze_btn').click(); 
+    </script>
+	
 </head>
 <body>
  
@@ -86,9 +91,12 @@ Enter the URL to an image, then click the <strong>Analyze image</strong> button.
 <br><br>
 Image to analyze:
 <input type="text" name="inputImage" id="inputImage"
-    value="https://eririanasubmission.blob.core.windows.net/blockblobs/Sky.jpg" />
-<button onclick="processImage()">Analyze image</button>
+    value="<?php echo $url ?>" readonly />
+<button id="analyze_btn" onclick="processImage()">Analyze image</button>
 <br><br>
+<script language="javascript">
+document.getElementById('analyze_btn').click(); 
+</script>
 <div id="wrapper" style="width:1020px; display:table;">
     <div id="jsonOutput" style="width:600px; display:table-cell;">
         Response:
